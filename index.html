@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Heado</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- owl carousel style -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	  <link href="css/luna.css" rel="stylesheet" />
+	  
+	  <script src="js/jquery-3.4.1.min.js"></script>
+	  
+	  <style>
+		.my-fixed-nav{
+		  position: fixed; width: 100%; top: 0px; background: #0a2640!important; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+		.nav__brand .navbar-brand strong{
+		  color: #fff;
+		}
+		
+		@media (min-width: 786px){
+		.nav__links__item a{
+			color: #fff;
+		}
+
+		.my-fixed-nav .nav__links__item a{ 
+			color: #fff!important;
+		}
+		.my-fixed-nav ul.mydropdown .nav__links__item a{
+			color: #333!important;
+		}
+		.my-fixed-nav .nav__brand .navbar-brand strong{
+			color: #fff!important;
+		}
+		.nav__links__item a:hover{
+			color: #000!important;
+		}
+		}
+		.nav__navicon{
+			background: #1c3d5b;
+		}
+		.nav__brand .navbar-brand strong{
+			color: #fff!important;
+		}
+		.my-fixed-nav .nav__brand .navbar-brand strong{
+			color: #fff!important;
+		}
+		.panel-menu-top{
+			min-height: 100px; background: #0a2640; margin-top: 80px; padding: 15px 0px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		}
+
+		nav.nav {
+		  background: transparent;
+		  margin-bottom: -90px;
+		}
+
+		@media (max-width: 786px){
+		  .projectFactsWrap .item-counter {
+			 flex: 0 0 50%;
+		  }
+		  nav.nav {
+			position: fixed;
+			background: transparent;
+			margin-bottom: 20px;
+			top: 0px;
+		  }
+		  .nav__links__wrapper{
+			background: #0a2640;
+		  }
+		}
+
+		.bg-light{
+			 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			 background: #f6f6f6;
+			 padding: 15px 10px;
+		}
+		.bg-light:hover{
+			 box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+		}
+		.item-counter{
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			background: var(--color-foreground);
+		}
+		.item-counter .svg-inline--fa{
+			font-size: 25px!important;
+			color: #fff!important;
+		}
+		p.text-secondary{
+			margin-bottom: 0px;
+		}
+		/*****************End Stat*****************************/
+		
+		
+		
+		.name {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+}
+.name:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: 1px;
+  background-color: #000;
+  bottom: -4px;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  max-height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017), 0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03), 0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043), 0 50px 60px rgba(0, 0, 0, 0.06);
+}
+.box .hide {
+  opacity: 0;
+}
+.box .frame {
+  position: absolute;
+  border: 1px solid #fff;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box h2, .box p {
+  position: absolute;
+  color: #fff;
+  z-index: 2;
+  width: 100%;
+  transition: opacity 0.2s, transform 0.3s;
+}
+.box h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+.box p {
+  bottom: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.box:hover {
+  transition: all 0.3s ease-in-out;
+}
+.box:hover:before {
+  transition: all 0.3s ease-in-out;
+}
+.box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.box img:hover {
+  transition: all 0.3s ease-in-out;
+}
+.box img:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.box img:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom-in h2 {
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: center;
+  margin: 0;
+}
+.zoom-in p {
+  text-align: center;
+  top: calc(50% + 40px);
+  transition: all 0.3s ease;
+  transform: scale(1.8);
+  opacity: 0;
+}
+.zoom-in:hover img {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
+.zoom-in:hover p {
+  transform: scale(1);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.w-content .frame {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: transparent;
+}
+.w-content h2 {
+  margin-top: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.w-content p {
+  transform: translate3d(0, -10px, 0);
+}
+.w-content:hover {
+  opacity: 0.8;
+}
+.w-content:hover .frame {
+  border-color: #fff;
+  transition: color 0.3s ease-in-out, all 0.3s ease-in-out;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.postcard h2 {
+  top: 50%;
+  text-align: left;
+  transform: translate3d(50px, 20px, 0);
+}
+.postcard p {
+  transform: translate3d(40px, 60px, 0);
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.postcard:hover h2 {
+  transform: translate3d(20px, 20px, 0);
+}
+.postcard:hover p {
+  opacity: 1;
+}
+.postcard:hover img {
+  filter: opacity(0.7);
+  transform: translate3d(-30px, 0, 0);
+}
+
+.blury-card .frame {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.blury-card h2, .blury-card p {
+  text-align: center;
+  top: 50%;
+  transform: translatey(-50%);
+  margin: 0;
+  z-index: 3;
+}
+.blury-card p {
+  transform: translatey(30px);
+  letter-spacing: 3px;
+}
+.blury-card span {
+  font-size: 24px;
+}
+.blury-card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #008E6B;
+  z-index: 1;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.blury-card img {
+  z-index: 2;
+}
+.blury-card:hover .frame {
+  width: calc(100% - 120px);
+  height: calc(100% - 120px);
+  opacity: 1;
+}
+.blury-card:hover img {
+  opacity: 0.7;
+}
+.blury-card:hover:before {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.vintage h2 {
+  top: 50%;
+  transform: translate3d(0, 60px, 0);
+  text-align: center;
+}
+.vintage p {
+  opacity: 0;
+  bottom: 0;
+  transform: translate3d(0, -10px, 0);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.vintage:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+  z-index: 2;
+  bottom: -100%;
+  left: 0;
+}
+.vintage:hover:before {
+  bottom: 0;
+}
+.vintage:hover h2 {
+  bottom: 40px;
+  transform: translate3d(0, 20px, 0);
+}
+.vintage:hover p {
+  opacity: 1;
+  transform: translate3d(0, -30px, 0);
+}
+
+.zoom-out .frame {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+.zoom-out h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+.zoom-out span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.zoom-out p {
+  max-width: 120px;
+  text-align: right;
+  margin: 10px;
+  right: 0;
+}
+.zoom-out img {
+  transform: scale(1.1);
+}
+.zoom-out:hover img {
+  transform: scale(1);
+  filter: contrast(70%);
+}
+
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+	  </style>
+   </head>
+   <body>
+   <nav class="nav" style=""> <!--nav--shadow   nav--fixed -->
+		<div class="nav__wrapper container" style="padding: 0px;">
+		 <div class="nav__brand"><a class="navbar-brand" href=""><img src="{{ asset('template/images/afhsolution.png') }}" alt="" style="height: 45px;"/> <strong>Idama Prod.</strong></a></div>
+		 <div class="nav__navicon"></div>
+		 <div class="nav__links__wrapper nav__links--right">
+		   <ul class="nav__links">
+			 <li class="nav__links__item"><a href="">Réalisations</a></li>
+			 <li class="nav__links__item"><a href="#">Services</a></li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Idama Prod.</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+				  <li class="nav__links__item"><a href="#"> À propos </a></li>
+				  <li class="nav__links__item"><a href=""> Blog </a></li>
+				  <li class="nav__links__item"><a href=""> La promotice </a></li>
+				  <li class="nav__links__item"><a href="#">Contacts</a></li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Mon Compte</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+					 <li class="nav__links__item">
+					 <a href="{{ oauthloginUrl }}">
+						<span>Connexion</span>
+					 </a>
+					</li>
+					 <li class="nav__links__item">
+					 <a href="{{ oauthsignupUrl }}">
+						<span>Inscription</span>
+					 </a>
+					</li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item"><a href="#"><span class="bi bi-window-sidebar"></span></a></li>
+		   </ul>
+		 </div>
+	   </div>
+	</nav>
+	
+	<script type="text/javascript">
+		$(window).bind('scroll', function(){
+			var largeur = ($(window).width());
+			dimension = 100;
+			if (largeur < 768)
+			{
+				dimension = 20;
+			}
+			// The value of where the "scoll" is.
+			
+			if($(window).scrollTop() > dimension){
+			  $('nav.nav').addClass('my-fixed-nav');
+			}else{
+			  $('nav.nav').removeClass('my-fixed-nav');
+			}
+		});
+	</script>
+	
+      <!--header section start -->
+      <div class="header_section">
+         <!--banner section start -->
+         <div class="banner_section layout_padding mt-5">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital">Production Vidéo HD</h4>
+                                 <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem I</p>
+                                 <div class="read_bt"><a href="#">Read More</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/img-1.png" class="image_1"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital">Production Vidéo HD</h4>
+                                 <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem I</p>
+                                 <div class="read_bt"><a href="#">Read More</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/img-1.png" class="image_1"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital">Production Vidéo HD</h4>
+                                 <p class="banner_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem I</p>
+                                 <div class="read_bt"><a href="#">Read More</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/img-1.png" class="image_1"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+               <i class=""><img src="images/left-icon.png"></i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+               <i class=""><img src="images/right-icon.png"></i>
+               </a>
+            </div>
+         </div>
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!--about section start -->
+      <div class="about_section layout_padding" style="padding-bottom: 0px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="image_2"><img src="images/img-2.png"></div>
+               </div>
+               <div class="col-md-6">
+                  <h1 class="about_taital">About <span class="us_text">Us</span></h1>
+                  <p class="about_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </p>
+                  <div class="read_bt_1"><a href="#">Read More</a></div>
+               </div>
+            </div>
+			
+			
+			<div class="row mt-3">
+				<div class="col-md-12">
+                  <h1 class="about_taital">Nos  réalisations <span class="us_text">50+</span> <a href="#" style="float: right;">Read More</a></h1>
+				</div>
+				<div class="col-md-4">
+					<div class="box vintage">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="box blury-card">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<div class="frame">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="box zoom-out">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<div class="frame">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+						</div>
+				    </div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="box vintage">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="box blury-card">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<div class="frame">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="box zoom-out">
+						<img src="https://source.unsplash.com/900x900/?vintage" alt="EMMYLOU">
+						<div class="frame">
+						<h2>EMMYLOU</h2>
+						<p>I'll be your Emmylou and I'll be your June</p>
+						</div>
+				    </div>
+				</div>
+			</div>
+         </div>
+      </div>
+      <!--about section end -->
+      <!--services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="service_taital"><span class="our_text">Our</span> Services</h1>
+            <p class="service_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <div class="icon_1"><img src="images/icon-1.png"></div>
+                     <h4 class="design_text">Logo Design</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                     <div class="icon_1"><img src="images/icon-2.png"></div>
+                     <h4 class="design_text">Web Development</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon_3"><img src="images/icon-3.png"></div>
+                     <h4 class="design_text">Web Design</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                     <div class="read_bt_2"><a href="#">Read More</a></div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon_1"><img src="images/icon-4.png"></div>
+                     <h4 class="design_text">Banner Design</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                     <div class="icon_1"><img src="images/icon-5.png"></div>
+                     <h4 class="design_text">Social Media Work</h4>
+                     <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--services section end -->
+      <!--blog section start -->
+      <div class="blog_section layout_padding">
+         <div class="container">
+            <h1 class="blog_taital"><span class="our_text">Our</span> Blog</h1>
+            <p class="blog_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+            <div class="services_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="box_main">
+                        <div class="student_bg"><img src="images/img-3.png" class="student_bg"></div>
+                        <div class="image_15">19<br>Feb</div>
+                        <h4 class="hannery_text">There are many variations</h4>
+                        <p class="fact_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="box_main">
+                        <div class="student_bg"><img src="images/img-4.png" class="student_bg"></div>
+                        <div class="image_15">19<br>Feb</div>
+                        <h4 class="hannery_text">There are many variations</h4>
+                        <p class="fact_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="box_main">
+                        <div><img src="images/img-5.png" class="student_bg"></div>
+                        <div class="image_15">19<br>Feb</div>
+                        <h4 class="hannery_text">There are many variations</h4>
+                        <p class="fact_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--blog section end -->
+      <!--newsletter section start -->
+      <div class="newsletter_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1 class="newsletter_text">Subscribe Now </h1>
+                  <p class="tempor_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+               </div>
+               <div class="col-md-6">
+                  <div class="mail_bt_main">
+                     <input type="text" class="mail_text" placeholder="Enter Tour Mail" name="Enter Tour Mail">
+                     <div class="subscribe_bt"><a href="#">SUBSCRIBE</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--newsletter section end -->
+      <!--client section start -->
+      <div class="client_section layout_padding">
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="blog_taital"><span class="tes_text">Tes</span>timonial</h1>
+                     <div class="client_section_2 layout_padding">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="client_box active">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text active">Magna</h6>
+                                    <p class="consectetur_text active">Consectetur adipiscing</p>
+                                    <div class="quote_icon active"></div>
+                                 </div>
+                                 <p class="ipsum_text active">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="client_box">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text">Magna</h6>
+                                    <p class="consectetur_text">Consectetur adipiscing</p>
+                                    <div class="quote_icon"></div>
+                                 </div>
+                                 <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="blog_taital"><span class="tes_text">Tes</span>timonial</h1>
+                     <div class="client_section_2 layout_padding">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="client_box active">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text active">Magna</h6>
+                                    <p class="consectetur_text active">Consectetur adipiscing</p>
+                                    <div class="quote_icon active"></div>
+                                 </div>
+                                 <p class="ipsum_text active">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="client_box">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text">Magna</h6>
+                                    <p class="consectetur_text">Consectetur adipiscing</p>
+                                    <div class="quote_icon"></div>
+                                 </div>
+                                 <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="blog_taital"><span class="tes_text">Tes</span>timonial</h1>
+                     <div class="client_section_2 layout_padding">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="client_box active">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text active">Magna</h6>
+                                    <p class="consectetur_text active">Consectetur adipiscing</p>
+                                    <div class="quote_icon active"></div>
+                                 </div>
+                                 <p class="ipsum_text active">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="client_box">
+                                 <div class="left_main">
+                                    <div class="image_6"><img src="images/img-6.png"></div>
+                                 </div>
+                                 <div class="right_main">
+                                    <h6 class="magna_text">Magna</h6>
+                                    <p class="consectetur_text">Consectetur adipiscing</p>
+                                    <div class="quote_icon"></div>
+                                 </div>
+                                 <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--client section end -->
+      <!--footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="address_main">
+               <div class="address_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Loram Ipusm hosting web</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">+7586656566</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
+            </div>
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">Useful link</h4>
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="services.html">Services</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">web design</h4>
+                     <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaL oreadipiscing </p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">social media</h4>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                           <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">Our Branchs</h4>
+                     <p class="footer_text_1">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--client section end -->
+      <!--copyright section start -->
+      <div class="copyright_section" style="background: #000; border-top: 2px solid #402fb7">
+         <div class="container">
+            <p class="copyright_text" style="color: #fff; text-align: left;">Copyright 2023 All Right Reserved By <a href="https://html.design" style="color: #402fb7;">Free Html Templates</a> Design by: <a href="https://code.afhunt.com" style="color: #402fb7;">AFH Code</a></p>
+         </div>
+      </div>
+      <!--copyright section end -->
+      <!-- Javascript files-->
+      
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+ 
+	  
+	  <script src="js/luna.js"></script>
+	
+		<script type="text/javascript">
+			$(window).Luna();
+		</script>
+	
+   </body>
+</html>
