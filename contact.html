@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contact</title>
+      <title>Heado</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -18,6 +18,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-icons.css"/>
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -30,75 +31,143 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	  <link href="css/luna.css" rel="stylesheet" />
+	  
+	  <script src="js/jquery-3.4.1.min.js"></script>
+
+      <style>
+        @media (min-width: 786px){
+            .nav__links__item a{
+                color: #000!important;
+            }
+            .nav__brand .navbar-brand strong{
+                color: #000!important;
+            }
+        }
+      </style>
+
    </head>
    <body>
-      <!--header section start -->
-      <div class="header_section header_bg">
-         <div class="container">
-            <nav class="navbar navbar-dark bg-dark">
-               <a class="logo" href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarsExample01">
-                  <ul class="navbar-nav mr-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="client.html">Client</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </div>
-      <!--header section end -->
-      <div class="contact_section layout_padding">
-         <div class="container">
-            <h1 class="touch_taital">Contact Us</h1>
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="email_text">
-                        <div class="form-group">
-                           <input type="text" class="email-bt" placeholder="Name" name="Email">
-                        </div>
-                        <div class="form-group">
-                           <input type="text" class="email-bt" placeholder="Phone Numbar" name="Email">
-                        </div>
-                        <div class="form-group">
-                           <input type="text" class="email-bt" placeholder="Email" name="Email">
-                        </div>
-                        <div class="form-group">
-                           <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                        </div>
-                        <div class="send_btn"><a href="#">SEND</a></div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="map_main">
-                        <div class="map-responsive">
-                           <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <nav class="nav" style=""> <!--nav--shadow   nav--fixed -->
+		<div class="nav__wrapper container" style="padding: 0px;">
+		 <div class="nav__brand"><a class="navbar-brand" href="index.html"><img src="{{ asset('template/images/afhsolution.png') }}" alt="" style="height: 45px;"/> <strong>Idama Prod.</strong></a></div>
+		 <div class="nav__navicon"></div>
+		 <div class="nav__links__wrapper nav__links--right">
+		   <ul class="nav__links">
+			 <li class="nav__links__item"><a href="realisations.html">Réalisations</a></li>
+			 <li class="nav__links__item"><a href="services.html">Services</a></li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Idama Prod.</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+				  <li class="nav__links__item"><a href="about.html"> À propos </a></li>
+				  <li class="nav__links__item"><a href=""> Blog </a></li>
+				  <li class="nav__links__item"><a href="promotrice.html"> La promotice </a></li>
+				  <li class="nav__links__item"><a href="contact.html">Contacts</a></li>
+                  <li class="nav__links__item"><a href="about.html">Notre équipe</a></li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Mon Compte</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+					 <li class="nav__links__item">
+					 <a href="login.html">
+						<span>Connexion</span>
+					 </a>
+					</li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item"><a href="#"><span class="bi bi-window-sidebar"></span></a></li>
+		   </ul>
+		  </div>
+	    </div>
+	</nav>
+	
+	<script type="text/javascript">
+		$(window).bind('scroll', function(){
+			var largeur = ($(window).width());
+			dimension = 100;
+			if (largeur < 768)
+			{
+				dimension = 20;
+			}
+			// The value of where the "scoll" is.
+			
+			if($(window).scrollTop() > dimension){
+			  $('nav.nav').addClass('my-fixed-nav');
+			}else{
+			  $('nav.nav').removeClass('my-fixed-nav');
+			}
+		});
+	</script>
+	
+      <section class="banner_inner_top">
+            <div class="container pt-3">
+                <!--h4 class="design_text text-left">À propos de la promotrice Idama Prod.</h4>
+                <p class="lorem_text text-left" style="width: 100%;">Lorem ipsum dolor sit amet, consectetur adipiscing </p-->
             </div>
-         </div>
+      </section>
+
+      <div class="container" style="min-height: 50vh; margin-top: -100px; position: relative; z-index: 1;">
+         
+         <div class="row">
+            <div class="col-md-12">
+                <div class="contact_inner">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="contact_form_inner">
+                                <div class="contact_field">
+                                    <h3>Contatc Us</h3>
+                                    <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                                    <input type="text" class="form-control form-group" placeholder="Name" />
+                                    <input type="text" class="form-control form-group" placeholder="Email" />
+                                    <textarea class="form-control form-group" placeholder="Message"></textarea>
+                                    <button class="contact_form_submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="right_conatct_social_icon d-flex align-items-end">
+                               <div class="socil_item_inner d-flex">
+                                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                  <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_info_sec">
+                        <h4>Contact Info</h4>
+                        <div class="d-flex info_single align-items-center">
+                            <i class="bi bi-phone"></i>
+                            <span>+91 8009 054294</span>
+                        </div>
+                        <div class="d-flex info_single align-items-center">
+                            <i class="bi bi-envelope-open-heart"></i>
+                            <span>info@flightmantra.com</span>
+                        </div>
+                        <div class="d-flex info_single align-items-center">
+                            <i class="bi bi-map"></i>
+                            <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-3">
+          <div class="col-md-12">
+              <div class="map_inner">
+                  <h4><span class="bi bi-geo-alt"></span> Find Us on Google Map</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
+                  <div class="map_bind">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+              </div>
+          </div>
       </div>
+
+       </div>
+      
+
+
       <!--footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
@@ -143,16 +212,16 @@
             </div>
          </div>
       </div>
-      <!--footer section end -->
+      <!--client section end -->
       <!--copyright section start -->
-      <div class="copyright_section">
+      <div class="copyright_section" style="background: #000; border-top: 2px solid #402fb7">
          <div class="container">
-            <p class="copyright_text">Copyright 2023 All Right Reserved By <a href="https://html.design">Free Html Templates</a> Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text" style="color: #fff; text-align: left;">Copyright 2023 All Right Reserved By <a href="https://html.design" style="color: #402fb7;">Free Html Templates</a> Design by: <a href="https://code.afhunt.com" style="color: #402fb7;">AFH Code</a></p>
          </div>
       </div>
       <!--copyright section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
+      
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
@@ -162,11 +231,13 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
-      <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
+ 
+	  
+	  <script src="js/luna.js"></script>
+	
+		<script type="text/javascript">
+			$(window).Luna();
+		</script>
+	
    </body>
 </html>
