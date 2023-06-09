@@ -367,4 +367,9 @@ $(function () {
      });
 
 
+	 $(window).on('load', function () {
+		$('#top-sidebar-popper').delay(450).fadeOut('slow');
+	  });
+
+
 });
