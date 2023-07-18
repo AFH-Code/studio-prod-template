@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Heado</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- owl carousel style -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="css/bootstrap-icons.css"/>
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	  <link href="css/luna.css" rel="stylesheet" />
+	  
+	  <script src="js/jquery-3.4.1.min.js"></script>
+
+      <style>
+        @media (min-width: 786px){
+            .nav__links__item a{
+                color: #000!important;
+            }
+            .nav__brand .navbar-brand strong{
+                color: #000!important;
+            }
+        }
+        
+
+        
+
+      </style>
+
+   </head>
+   <body>
+    <div class="wrapperloader" id="top-sidebar-popper">
+      <div  style = '--i : 1; background-color : tomato'class="rect"></div>
+      <div  style = '--i : 2; background-color : #5037c9'class="rect"></div>
+      <div  style = '--i : 3; background-color : #1ae2ac'class="rect"></div>
+      <div  style = '--i : 4; background-color : #e29f1a'class="rect"></div>
+      <div  style = '--i : 5; background-color : #e21ab9'class="rect"></div>
+      <div  style = '--i : 6; background-color : #c395bf'class="rect"></div>
+      <div  style = '--i : 7; background-color : #4032bb'class="rect"></div>
+      <div  style = '--i : 8; background-color : #0fe0b7'class="rect"></div>
+  </div>
+  
+   <nav class="nav" style=""> <!--nav--shadow   nav--fixed -->
+		<div class="nav__wrapper container" style="padding: 0px;">
+		 <div class="nav__brand"><a class="navbar-brand" href="index.html"><img src="{{ asset('template/images/afhsolution.png') }}" alt="" style="height: 45px;"/> <strong>Idama Prod.</strong></a></div>
+		 <div class="nav__navicon"></div>
+		 <div class="nav__links__wrapper nav__links--right">
+		   <ul class="nav__links">
+			 <li class="nav__links__item"><a href="realisations.html">Réalisations</a></li>
+			 <li class="nav__links__item"><a href="services.html">Services</a></li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Idama Prod.</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+				  <li class="nav__links__item"><a href="about.html"> À propos </a></li>
+				  <li class="nav__links__item"><a href="blog.html"> Blog </a></li>
+				  <li class="nav__links__item"><a href="promotrice.html"> La promotice </a></li>
+				  <li class="nav__links__item"><a href="contact.html">Contacts</a></li>
+          <li class="nav__links__item"><a href="about.html">Notre équipe</a></li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item nav__links__item--dropdown"><a href="#">Mon Compte</a>
+				<ul class="nav__links mydropdown" style="right: 0px!important; left: auto;">
+					 <li class="nav__links__item">
+					 <a href="login.html">
+						<span>Connexion</span>
+					 </a>
+					</li>
+				</ul>
+			 </li>
+			 <li class="nav__links__item"><a href="contact.html"><span class="bi bi-telephone-forward"></span></a></li>
+		   </ul>
+		  </div>
+	    </div>
+	</nav>
+	
+	<script type="text/javascript">
+		$(window).bind('scroll', function(){
+			var largeur = ($(window).width());
+			dimension = 100;
+			if (largeur < 768)
+			{
+				dimension = 20;
+			}
+			// The value of where the "scoll" is.
+			
+			if($(window).scrollTop() > dimension){
+			  $('nav.nav').addClass('my-fixed-nav');
+			}else{
+			  $('nav.nav').removeClass('my-fixed-nav');
+			}
+		});
+	</script>
+	
+      <section class="banner_inner_top">
+            <div class="container pt-3">
+                <h4 class="design_text text-left">Banner Design</h4>
+                <p class="lorem_text text-left" style="width: 100%;">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+            </div>
+      </section>
+
+      <section class="mt-4 mb-4">
+        <div class="container">
+
+            <div class="row">
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service"><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=1" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                       <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service"><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=2" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                       <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service"><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=3" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                       <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service"><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=6" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                       <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service"><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=4" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                       <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4">
+                  <div class="card-container"> 
+                     <div class="card-service "><a href="hottub">
+                         <div class="card--display">
+                           <div><img class="card-img-top" src="https://picsum.photos/380/380?random=5" height="380" alt="Card image cap"></div>
+                           <h2>Hot Tub Time Machine</h2>
+                         </div>
+                         <div class="card--hover">
+                           <h2>Hot Tub Time Machine</h2>
+                           <p style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at est orci. Nam molestie pellentesque mi nec lacinia. Cras volutpat arcu sit amet elit sodales, nec volutpat velit bibendum.</p>
+                           <p class="link">10 projets réalisés</p>
+                         </div></a>
+                         <div class="card--border"></div>
+                     </div>
+                   </div>
+               </div>
+
+            </div>
+
+        </div>
+      </section>
+
+      <!--footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="address_main">
+               <div class="address_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Loram Ipusm hosting web</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">+7586656566</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
+            </div>
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">Useful link</h4>
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="services.html">Services</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">web design</h4>
+                     <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaL oreadipiscing </p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">social media</h4>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                           <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h4 class="link_text">Our Branchs</h4>
+                     <p class="footer_text_1">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--client section end -->
+      <!--copyright section start -->
+      <div class="copyright_section" style="background: #000; border-top: 2px solid #402fb7">
+         <div class="container">
+            <p class="copyright_text" style="color: #fff; text-align: left;">Copyright 2023 All Right Reserved By <a href="https://html.design" style="color: #402fb7;">Free Html Templates</a> Design by: <a href="https://code.afhunt.com" style="color: #402fb7;">AFH Code</a></p>
+         </div>
+      </div>
+      <!--copyright section end -->
+      <!-- Javascript files-->
+      
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+ 
+	  
+	  <script src="js/luna.js"></script>
+	
+		<script type="text/javascript">
+			$(window).Luna();
+		</script>
+	
+   </body>
+</html>
